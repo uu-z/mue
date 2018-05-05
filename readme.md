@@ -34,8 +34,8 @@ new $core({}).$use({
 <body>
   <div id="app">
     <input type="text" v-model="count">
-    <button type="button" v-click="increment">increment</button>
-    <p v-bind="count"></p>
+    <button type="button" @click="increment">increment</button>
+    <p :val="count" :style="color: red;"></p>
   </div>
   <script src="./index.js"></script>
 </body>
