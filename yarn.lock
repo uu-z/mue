@@ -3712,17 +3712,17 @@ menhera@^0.6.7-rc8:
     lodash.has "^4.5.2"
     lodash.set "^4.3.2"
 
-menhera@^0.6.7-rc9:
-  version "0.6.7-rc9"
-  resolved "https://registry.npmjs.org/menhera/-/menhera-0.6.7-rc9.tgz#24dedca47bc80d8bb265483b763071814a3953fe"
+menhera@^0.7.2:
+  version "0.7.3"
+  resolved "https://registry.npmjs.org/menhera/-/menhera-0.7.3.tgz#3fe339bed3e72b6439b183fcfa1fd54e3faa6e77"
   dependencies:
     lodash.get "^4.4.2"
     lodash.has "^4.5.2"
     lodash.set "^4.3.2"
 
-menhera@^0.7.2:
-  version "0.7.3"
-  resolved "https://registry.npmjs.org/menhera/-/menhera-0.7.3.tgz#3fe339bed3e72b6439b183fcfa1fd54e3faa6e77"
+menhera@^0.7.4-rc2:
+  version "0.7.4-rc2"
+  resolved "https://registry.npmjs.org/menhera/-/menhera-0.7.4-rc2.tgz#cf92365ddfa1c3ba9eb4b0a6267424011aa24dea"
   dependencies:
     lodash.get "^4.4.2"
     lodash.has "^4.5.2"

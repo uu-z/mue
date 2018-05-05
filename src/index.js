@@ -71,10 +71,7 @@ export default {
           if (matchColon.test(attr)) {
             attr = attr.replace(matchColon, "");
 
-            if (attr === "style") {
-              n.style.cssText = v_bind;
-              return;
-            } else {
+            if (attr === "val" || attr === "value") {
               attr = "innerHTML";
             }
 
@@ -109,9 +106,10 @@ export default {
   methods: {
     _updateWatch(watch) {
       const { el, attr, vm, exp } = watch;
+      let val = vm.$data[exp] === undefined ? exp : vm.$data[exp];
 
       $set(el, {
-        [attr]: vm.$data[exp]
+        [attr]: val
       });
       return watch;
     },
