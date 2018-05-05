@@ -1,0 +1,30 @@
+{
+  "name": "menhera-vue",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "files": ["dist"],
+  "scripts": {
+    "start": "babel-node ./src/index.js",
+    "dev": "nodemon src/* --exec babel-node",
+    "build": "bili --filename index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-env": "^1.1.6",
+    "bili": "^3.1.0",
+    "nodemon": "^1.11.0",
+    "parcel-bundler": "^1.8.1"
+  },
+  "dependencies": {
+    "menhera": "^0.6.7-rc9",
+    "menhera-cli": "^0.3.1-rc4",
+    "menhera-utils": "^0.0.1"
+  },
+  "bili": {
+    "babel": {
+      "babelrc": false
+    }
+  }
+}
