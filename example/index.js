@@ -1,7 +1,7 @@
-import { $core } from "menhera";
+import Mhr from "menhera";
 import Mue from "../src";
 
-new $core({}).$use({
+new Mhr({
   _mount: {
     Mue
   },

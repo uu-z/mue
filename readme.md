@@ -8,10 +8,10 @@ $ yarn add menhera menhera-vue
 
 ```js
 //index.js
-import { $core } from "menhera";
-import Mue from " menhera-vue";
+import Mhr from "menhera";
+import Mue from "menhera-vue";
 
-new $core({}).$use({
+new Mhr({
   _mount: {
     Mue
   },
