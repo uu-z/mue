@@ -8,9 +8,6 @@ $ yarn add menhera menhera-vue
 
 ```js
 //index.js
-import Mhr from "menhera";
-import Mue from "menhera-vue";
-
 new Mhr({
   _mount: {
     Mue
@@ -24,6 +21,18 @@ new Mhr({
       increment() {
         this.count++;
       }
+    },
+    beforeCreate() {
+      this.$data.count++;
+    },
+    created() {
+      this.$data.count++;
+    },
+    beforeMount() {
+      this.$data.count++;
+    },
+    mounted() {
+      this.$data.count++;
     }
   }
 });

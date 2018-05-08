@@ -14,6 +14,18 @@ new Mhr({
       increment() {
         this.count++;
       }
+    },
+    beforeCreate() {
+      this.$data.count++;
+    },
+    created() {
+      this.$data.count++;
+    },
+    beforeMount() {
+      this.$data.count++;
+    },
+    mounted() {
+      this.$data.count++;
     }
   }
 });
